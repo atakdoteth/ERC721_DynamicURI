@@ -3,7 +3,7 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const Contract = await hre.ethers.getContractFactory("ERC721_TokenStates");
+  const Contract = await hre.ethers.getContractFactory("DynamicURI");
   const contract = await Contract.deploy();
 
   await contract.deployed();

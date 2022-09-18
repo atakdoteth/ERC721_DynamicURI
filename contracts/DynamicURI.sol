@@ -1171,7 +1171,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
 }
 
 
-contract ERC721_TokenStates is ERC721A, Ownable {
+contract ERC721_DynamicURI is ERC721A, Ownable {
 
 
     //author = atak.eth
@@ -1200,7 +1200,7 @@ contract ERC721_TokenStates is ERC721A, Ownable {
     
     
     
-    constructor() ERC721A("ERC721_TokenStates", "ERC721_TokenStates") {
+    constructor() ERC721A("DynamicURI", "DynamicURI") {
         currentIndex++;
     }
 
